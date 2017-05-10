@@ -1,0 +1,12 @@
+Why can you only use certain pins for analogWrite()?
+AnalogWrite() pins will generate a steady square wave of the specified duty cycle until the next call to analogWrite() 
+(or a call to digitalRead() or digitalWrite() on the same pin).The analogWrite function has nothing to do with the
+analog pins or the analogRead function. Only certain pins will allow the input of various ranges of data.
+
+What is the range the map() function maps the value to? Why this range?
+
+Re-maps a number from one range to another. That is, a value of fromLow would get mapped to toLow, a value of fromHigh to toHigh, 
+values in-between to values in-between, etc. Does not constrain values to within the range, because out-of-range values are sometimes 
+intended and useful. The constrain() function may be used either before or after this function, if limits to the ranges are desired.Note
+that the "lower bounds" of either range may be larger or smaller than the "upper bounds" so the map() function may be used to reverse a 
+range of numbers. The function also handles negative numbers well.
