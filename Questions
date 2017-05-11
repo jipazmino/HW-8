@@ -1,6 +1,5 @@
 Why can you only use certain pins for analogWrite()?
-AnalogWrite() pins will generate a steady square wave of the specified duty cycle until the next call to analogWrite() 
-(or a call to digitalRead() or digitalWrite() on the same pin).The analogWrite function has nothing to do with the
+AnalogWrite() pins generate a specific cycle until its called again.The analogWrite function has nothing to do with the
 analog pins or the analogRead function. Only certain pins will allow the input of various ranges of data.
 
 What is the range the map() function maps the value to? Why this range?
